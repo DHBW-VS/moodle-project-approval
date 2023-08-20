@@ -58,7 +58,7 @@ class restore_projectapproval_activity_structure_step extends restore_activity_s
         // To know if we are including userinfo.
         $userinfo = $this->get_setting_value('userinfo');
         if (!$userinfo) {
-            retrun;
+            return;
         }
         $data = (object)$data;
         // Set new cmid.
